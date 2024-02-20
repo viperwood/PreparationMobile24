@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PreparationMobile.ViewPatient">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Entry x:Name="IdPatientEntry"/>
+                <Button Text="Найти" Clicked="SerchButton"/>
+                <Label x:Name="DataissuemcBlock"/>
+                <Label x:Name="DataexpirationinsurancepolisyBlock"/>
+                <Label x:Name="NumberpolisBlock"/>
+                <Label x:Name="PolicyvalidityBlock"/>
+                <Label x:Name="PlaceofworknameBlock"/>
+                <Label x:Name="InsurancecompanynameBlock"/>
+                <Label x:Name="FioBlock"/>
+                <Label x:Name="NumberpBlock"/>
+                <Label x:Name="SeriespBlock"/>
+                <Label x:Name="BirthdayBlock"/>
+                <Label x:Name="GendernameBlock"/>
+                <Label x:Name="AddressBlock"/>
+                <Label x:Name="PhoneBlock"/>
+                <Label x:Name="EmailBlock"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

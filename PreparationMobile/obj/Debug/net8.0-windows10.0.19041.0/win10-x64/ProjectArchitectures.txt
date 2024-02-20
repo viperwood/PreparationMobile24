@@ -1,0 +1,1 @@
+C:\Users\prdb\RiderProjects\PreparationMobile\PreparationMobile\PreparationMobile.csproj;x64

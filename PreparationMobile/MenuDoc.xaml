@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PreparationMobile.MenuDoc">
+    <ContentPage.Content>
+        <VerticalStackLayout>
+            <Button Text="Просмотр всей доступной информации о пациенте" Clicked="FindPAtient"/>
+            <Button Text="Работа с мед. картой пациента" Clicked="PatientCartbutton"/>
+            <Button Text="Back" Clicked="BackButton"/>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PreparationMobile.MedCartPatientPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <VerticalStackLayout>
+            <Button Text="Back" Clicked="BackButton"/>
+            <Picker Title="Select patient" x:Name="PatientPicker" ItemDisplayBinding="{Binding FioPatient}"/>
+            <Entry x:Name="AnamnisEntry"/>
+            <Entry x:Name="SimpomaticEntry"/>
+            <Picker Title="Select diagnos" x:Name="DiagnosPicker" ItemDisplayBinding="{Binding DiagnosName}"/>
+            <Entry x:Name="RecomindationEntry"/>
+                    <Picker Title="Select preparation" x:Name="PreparationPicker" ItemDisplayBinding="{Binding PreparationName}"/>
+                    <Entry x:Name="DosaEntry"/>
+                    <Entry x:Name="FormEntry"/>
+                    <Button Text="Add" Clicked="AddListPreparat"/>
+                    <Border>
+                        <ListView x:Name="ReseptList" RowHeight="70">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                            <StackLayout>
+                                                <Label Text="{Binding Preparation}"/>
+                                                <Label Text="{Binding DosaPrep}"/>
+                                                <Label Text="{Binding FormatPriema}"/>
+                                            </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Border>
+            <Entry x:Name="DiagnosticNameEntry"/>
+            <Entry x:Name="DescriptioneEntry"/>
+            <Picker Title="Select tipe direction" x:Name="TipeDirectionPicker" ItemDisplayBinding="{Binding NameTipe}"/> 
+            <Button Text="Направить" Clicked="Next"/>
+        </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
